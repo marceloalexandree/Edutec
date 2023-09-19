@@ -1,0 +1,110 @@
+@import 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Numans&display=swap';
+@media(max-width: 1440px){
+    *{
+        font-size: 11px;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+#comeco {
+    background: linear-gradient(to bottom right, #000000, #3d1c4d);
+    padding-inline: 5rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 5rem;
+    font-family: 'Open Sans';
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+#comeco p {
+    font-size: 1.75rem;
+    color: #ffffff;
+    font-family: 'Numans';
+    margin-inline: 27rem;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.imagem-logo{
+    display: flex;
+    justify-content: center;
+}
+
+.imagem-logo img {
+    width: 25rem;
+}
+
+h2 {
+    background: #111111;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Numans';
+    color: #ffffff;
+    padding-top: 5rem;
+}
+
+#final {
+    background: #111111;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    padding-bottom: 7.5rem;
+    height: 90vh;
+}
+
+#final2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+#final h3 {
+    font-family: 'Open Sans';
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+#final p{
+    font-family: 'Open Sans';
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.125rem;
+}
+
+#final img{
+    width: 5rem;
+    filter: invert(1);
+}
+
+#materiais, #filme-serie, #jogos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-around;
+    background: #111111;
+    border: solid 1px #ffffff;
+    border-radius: 10px;
+    color: #ffffff;
+    width: 25rem;
+    height: 25rem;
+    padding-inline: 2rem;
+    padding-block: 2rem;
+}

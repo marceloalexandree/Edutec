@@ -1,0 +1,108 @@
+main{
+    background: url(../images/fundo.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    align-items: center;
+    padding-top: 5rem;
+}
+
+form{
+    background-color: rgba(0, 0, 0, .7);
+    display: flex;
+    flex-direction: column;
+    padding-inline: 5rem;
+    padding-block: 4rem;
+    gap: 4rem;
+    border-radius: 7px;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    width: 27rem;
+}
+
+#selecao{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 7rem;
+}
+
+#informacoes{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+input{
+    background: none;
+    border: none;
+    border-bottom: 2px solid rgba(220, 220, 220, 0.5);
+    font-family: 'Open Sans';
+    color: rgb(220, 220, 220);
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding-block: .5rem;
+}
+
+#selecao a{
+    background: none;
+    color: rgb(220, 220, 220);
+    font-family: 'Numans', sans-serif;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: .5rem;
+}
+
+label{
+    border: none;
+    font-family: 'Open Sans';
+    color: rgb(220, 220, 220);
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+#enviar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Numans', sans-serif;
+}
+
+#enviar button{
+    border: none;
+    background: rgba(143, 71, 173, .75);
+    border-radius: 5px;
+    color: rgb(220, 220, 220);
+    font-size: 1.25rem;
+    padding-inline: 10.75rem;
+    padding-block: .75rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Open Sans';
+}
+
+#enviar a{
+    color: rgb(220, 220, 220);
+}
+
+.selecionado{
+    border-bottom: 1px solid #8F47AD;
+    border-top: solid 1px transparent;
+    border-left: solid 1px transparent;
+    border-right: solid 1px transparent;
+    border-radius: 3px;
+}
+
+.deselecionado{
+    border: solid 1px transparent;
+}
+
+#selecao button:hover {
+    cursor: pointer;
+}
+
+#enviar button{
+    cursor: pointer;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <script src="js/script.js" defer ></script>
+    <script src="js/load.js" defer></script>
+    <title>Quiz</title>
+</head>
+<body>
+    <div class="iniciar">
+        <!-- Início do Quiz -->
+        <h2 id='titulo'> Quiz</h2>
+        <p class="regras">
+            Para começar clique no botão abaixo!
+        </p>
+        <button id="iniciarBtn" onclick="iniciarQuiz()">
+            <span></span>
+            <strong>Começar</strong>
+        </button>
+
+        <button id="sairBtn">
+            <a href="../Início(1)/index.html">
+                <!--Voltar para pagina principal-->
+                <strong>Sair</strong>
+            </a>
+            
+        </button>
+    </div>
+
+ <!--Conteudo do Quiz-->
+
+ <header id="quizHeader">
+    <div class="pon">Pontuação: <span id="pontuacaoAtual">0</span></div>
+    <div class="ace">Acertos: <span id="acertos">0</span></div>
+    <div class="err">Erros: <span id="erros">0</span></div>
+</header>
+
+    <main class="tela-principal">
+
+        <section class='conteudos'>
+        
+            <article class='questoes'>
+                
+
+                <figure class='imagemDaQuestao'>
+                    <img src="" alt="Imagem">
+                </figure> 
+
+                <header class='questao'>
+                    <h1 id='pergunta'></h1>
+                </header>
+                                
+                <div class='corpo'>
+                    <ol type='A' id='alternativas'>
+                        <li id='a' value='1A' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+                        <li id='b' value='1B' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+                    </ol>
+                    <ol type='A' id='alternativas'>
+                        <li id='c' value='1C' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+                        <li id='d' value='1D' class='respostas' onClick='verificarSeAcertou(this, this)'></li>
+                    </ol>
+                </div>
+
+            </article>
+            <button class="saida">
+                <a href="../Início(1)/index.html">
+                    <strong>X</strong>
+                </a>
+            </button>
+        
+        </section>
+
+    </main>
+
+    <div id="finalizacao" class="centrou">
+        <h2>Quiz Concluído</h2>
+        <p>Você acertou <span id="pontuacao"></span> questões de um total de <span id="totalQuestoes"></span>.</p>
+        <button id="reiniciar" onclick="reiniciarQuiz()">Reiniciar</button>
+        <button>
+            <a href="../Início(1)/index.html">
+                Sair
+            </a>
+        </button>
+    </div>
+    
+
+</body>
+</html>

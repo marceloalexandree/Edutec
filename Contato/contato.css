@@ -1,0 +1,12 @@
+@import './css/header.css';
+@import './css/main.css';
+@import './css/footer.css';
+@import './css/responsivity.css';
+@import 'https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600;700;800&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Numans&display=swap';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

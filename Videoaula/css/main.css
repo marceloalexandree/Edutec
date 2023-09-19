@@ -1,0 +1,181 @@
+main{
+    background: url(../images/fundo.png);
+    background-size: contain;
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h1 {
+    color: #ffffff;
+    font-size: 4.5rem;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    text-align: center;
+    padding-block: 3rem;
+
+}
+
+#cima{
+    position: absolute;
+    top: 8rem;
+    left: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    font-size: 4rem;
+    font-family: 'Numans';
+}
+
+.conteudos{
+    display: grid;
+    grid-template-columns: 23rem 23rem 23rem 23rem;
+    grid-template-rows: 27rem 27rem 27rem;
+    column-gap: 4.5rem;
+    row-gap: 4.5rem;
+    padding-bottom: 7rem;
+}
+
+.container{
+    position: relative;
+    overflow-y: hidden;
+}
+
+.frente, .verso{
+    position: absolute;
+    transition: .75s ease;
+    width: 100%;
+    height: 100%;
+}
+
+.frente{
+    z-index: 3;
+    border-radius: 10px;
+    background-color: #111111;
+    background-size: 85%
+}
+
+.verso{
+    bottom: -100%;
+    backdrop-filter: blur(16px) saturate(120%);
+    background-color: #000a;
+    z-index: -1;
+    color: #fff;
+    text-align: center;
+    padding-inline: 3rem;
+}
+
+.verso div{
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+}
+
+.verso h2{
+    font-size: 1.75rem;
+    margin-top: 1.25rem;
+    margin-bottom: .5rem;
+}
+
+.verso h3{
+    font-weight: 300;
+    font-size: 1.125rem;
+    margin-bottom: .75rem;
+    text-decoration: underline;
+}
+
+.verso h4{
+    border: 1px solid #fff;
+    padding: .5rem;
+    font-size: .835rem;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.verso p{
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.verso a {
+    text-decoration: none;
+}
+
+.verso a img{
+    width: 3.5rem;
+}
+
+.container:hover .verso{
+    bottom: -30%;
+    z-index: 4;
+    cursor: pointer;
+}
+
+.frente:hover{
+    cursor: pointer;
+}
+
+#sol{
+    background-image: url(../images/sol.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#lua{
+    background-image: url(../images/Lua.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#mercurio{
+    background-image: url(../images/Mercurio.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#venus{
+    background-image: url(../images/Venus.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#terra{
+    background-image: url(../images/Terra.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
+#marte{
+    background-image: url(../images/Marte.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#jupiter{
+    background-image: url(../images/Jupiter.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#saturno{
+    background-image: url(../images/Saturno.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#urano{
+    background-image: url(../images/Urano.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#netuno{
+    background-image: url(../images/Netuno.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#galaxia{
+    background-image: url(../images/Galaxia.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#buraco{
+    background-image: url(../images/Buraco.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}

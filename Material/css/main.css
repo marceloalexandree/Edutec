@@ -1,0 +1,73 @@
+main{
+    background: url(../images/fundo.png);
+    background-size: contain;
+    padding-inline: 10rem;
+    padding-bottom: 7rem;
+    min-height: 100vh;
+}
+
+main h1 {
+    color: #ffffff;
+    font-size: 4rem;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-top: 12rem;
+}
+
+main h2 {
+    color: #ffffff;
+    font-size: 2rem;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    text-align: center;
+}
+
+main p {
+    font-size: 1.75rem;
+    color: #ffffff;
+    font-family: 'Numans';
+    margin-inline: 27rem;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+main a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Open Sans';
+    font-size: 1.5rem;
+}
+
+main section{
+    display: flex;
+    gap: 12rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+#mapas, #video, #modelo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    background: #111111;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+    width: 25rem;
+    padding-block: 4rem;
+}
+
+#mapas img, #video img, #modelo img{
+    filter: invert(1);
+    width: 8rem;
+}
+
+#mapas:hover, #video:hover, #modelo:hover{
+    cursor: pointer;
+}
+
+main a:hover {
+    text-decoration: underline;
+}

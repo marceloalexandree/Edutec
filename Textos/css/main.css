@@ -1,0 +1,245 @@
+main {
+    padding-top: 3.5rem;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+#conteudos{
+    width: 100vw;
+    min-height: 100vh;
+
+}
+
+#texto{
+    margin-inline: 15rem;
+    background: rgba(5, 5, 5, 0.6);
+    margin-top: 6.5rem;
+    margin-bottom: 3.5rem;
+    padding-bottom: 3rem;
+    color: #f0f0f0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#texto h1, #texto h2{
+    text-align: center;
+}
+
+#texto h1{
+    font-size: 3.5rem;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    padding-block: 1.5rem;
+}
+
+#texto h2{
+    font-size: 1.75rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #d3d3d3;
+}
+
+#texto h3{
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #d3d3d3;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+
+#texto p{
+    font-size: 1.375rem;
+    font-family: 'Open Sans';
+    padding-inline: 10rem;
+    padding-bottom: .75rem;
+    text-align: justify;
+}
+
+#texto span{
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+#texto a, #texto button{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.125rem;
+    font-family: 'Numans';
+    padding: .75rem;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    transition: .5s;
+    background: none;
+}
+
+#texto img{
+    width: 35rem;
+    height: auto;
+    border-radius: 7px;
+    margin-top: 2rem;
+}
+
+#texto figcaption{
+    font-size: 1.125rem;
+    font-family: 'Numans';
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: .5rem;
+}
+
+#texto div{
+    display: flex;
+    gap: 2rem;
+    margin-block: 2rem;
+}
+
+#texto a:hover, #texto button:hover{
+    background: #fff;
+    color: #111;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+dialog{
+    width: 50vw;
+    min-height: 10rem;
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    border: none;
+    backdrop-filter: opacity(50%);
+    border-radius: 5px;
+    background: rgba(17, 17, 17, 0.925);
+    color: #fff;
+    padding-block: 1.5rem;
+}
+
+dialog p{
+    font-size: 1.5rem;
+    font-family: 'Open Sans';
+    padding-inline: 15rem;
+    padding-bottom: .75rem;
+    text-align: justify;
+}
+
+dialog span{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+dialog h2{
+    text-align: center;
+    font-size: 2.25rem;
+    font-family: 'Open Sans';
+    color: #fff;
+    margin-bottom: 2rem;
+}
+
+dialog button{
+    position: absolute;
+    left: .75rem;
+    top: .5rem;
+    background: none;
+    color: #fff;
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+#direita{
+    color: #fff;
+    font-size: 4rem;
+    position: fixed;
+    right: 1rem;
+    bottom: calc(50% + .125rem);
+    text-decoration: none;
+    font-family: 'Open Sans';
+    font-weight: 800;
+}
+
+#esquerda{
+    color: #fff;
+    font-size: 4rem;
+    position: fixed;
+    left: 1rem;
+    bottom: calc(50% + .125rem);
+    text-decoration: none;
+    font-family: 'Open Sans';
+    font-weight: 800;
+}
+
+#texto #mis{
+    width: 30rem;
+}
+
+main #ovo{
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;   
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: .5rem;
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Numans';
+    font-size: 1.125rem;
+    transition: .5s;
+}
+
+main #ovo:hover{
+    background: #fff;
+    color: #111;
+}
+
+
+.sol{
+    background-image:  linear-gradient(135deg, rgba(17, 17, 17, 0.5), #111) ,url(../images/sol/capa.jpg);
+    
+}
+
+.lua{
+    background-image:  linear-gradient(135deg, rgba(17, 17, 17, 0.5), #111) ,url(../images/lua/capa.jpg);
+}
+
+.mercurio{
+    background-image:  linear-gradient(135deg, rgba(17, 17, 17, 0.5), #111) ,url(../images/mercurio/capa.jpg);
+}
+
+.venus{
+    background-image:  linear-gradient(135deg, rgba(17, 17, 17, 0.5), #111) ,url(../images/venus/capa.jpg);
+}
+
+.terra{
+    background-image:  linear-gradient(135deg, rgba(17, 17, 17, 0.5), #111) ,url(../images/terra/capa.jpg);
+}
+
+.marte{
+    background-image:  linear-gradient(135deg, rgba(17, 17, 17, 0.5), #111) ,url(../images/marte/capa.jpg);
+}
+
+.jupiter{
+    background-image:  linear-gradient(135deg, rgba(17, 17, 17, 0.5), #111) ,url(../images/jupiter/capa.jpg);
+}
+
+.saturno{
+    background-image:  linear-gradient(135deg, rgba(17, 17, 17, 0.5), #111) ,url(../images/saturno/capa.jpg);
+}
+
+.urano{
+    background-image:  linear-gradient(135deg, rgba(17, 17, 17, 0.5), #111) ,url(../images/urano/capa.jpg);
+}
+
+.netuno{
+    background-image:  linear-gradient(135deg, rgba(17, 17, 17, 0.5), #111) ,url(../images/netuno/capa.jpg);
+}
+
+.lactea{
+    background-image:  linear-gradient(135deg, rgba(17, 17, 17, 0.5), #111) ,url(../images/lactea/capa.jpg);
+}
+
+.buraco{
+    background-image:  linear-gradient(135deg, rgba(17, 17, 17, 0.5), #111) ,url(../images/buraco/capa.jpg);
+}

@@ -1,0 +1,218 @@
+main{
+    background: url(../images/fundo.png);
+    background-size: contain;
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h1 {
+    color: #ffffff;
+    font-size: 4.5rem;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    text-align: center;
+    padding-block: 3rem;
+
+}
+
+#cima{
+    position: absolute;
+    top: 8rem;
+    left: 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    font-size: 4rem;
+    font-family: 'Numans';
+}
+
+.conteudos{
+    display: grid;
+    grid-template-columns: 23rem 23rem 23rem 23rem;
+    grid-template-rows: 27rem 27rem 27rem;
+    column-gap: 4.5rem;
+    row-gap: 4.5rem;
+    padding-bottom: 7rem;
+    
+}
+
+.container{
+    position: relative;
+    
+}
+
+
+.frente, .verso{
+    position: absolute;
+    backface-visibility: hidden;
+    aspect-ratio: 3/4;
+    height: 100%;
+    transition: 2s ease;
+}
+
+.frente{
+    z-index: 1;
+    background-size: 85%;
+    background-repeat: no-repeat;
+    background-color: #111111;
+    background-position: center;
+}
+
+.verso{
+    background: #c1c1c1;
+    color: #111111;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+    padding-inline: 2.5rem;
+    position: absolute;
+    
+}
+        
+.verso h2{
+    text-align: center;
+    font-size: 2.25rem;
+    font-family: 'Open Sans';
+}
+
+.verso h3{
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Numans';
+}
+
+.verso p{
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Numans';
+}
+
+.verso button {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: 'Open Sans';
+    color: #ffffff;
+    background-color: #000000;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    padding-block: 1rem;
+    padding-inline: 1.5rem;
+    transition: .3s;
+    opacity: 1;
+    
+}
+
+.Conferir:hover{
+    color: #ffffff;
+    border: 2px solid #620086;
+    background-color: #720086;
+    cursor: pointer;
+
+
+}
+
+.container:hover .verso{
+    opacity: .9;
+    z-index: 2;
+    
+}
+.frente:hover{
+    transition: 2s linear;
+    cursor: pointer;
+}
+
+/*.container:hover .verso{
+    transform: rotateY(0);
+    z-index: 2;
+    filter: invert(1);
+}
+
+.container:hover .frente{
+    transform: rotateY(-180deg);
+    z-index: 1;
+}
+*/
+.dialog{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000a;
+    backdrop-filter: blur(16px) saturate(120%);
+
+}
+dialog button{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+dialog button:hover{
+    border: 2px solid #ff0000;
+    background-color: #ff0000;
+    cursor: pointer;
+}
+
+dialog {
+    border: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+.mapas {
+    width: 90rem;
+}
+
+#sol{
+    background-image: url(../images/Design\ sem\ nome.png);
+}
+
+#lua{
+    background-image: url(../images/Lua.png);
+}
+
+#mercurio{
+    background-image: url(../images/Mercurio.png);
+}
+
+#venus{
+    background-image: url(../images/Venus.png);
+}
+
+#terra{
+    background-image: url(../images/Terra.png);
+}
+
+#marte{
+    background-image: url(../images/Marte.png);
+}
+
+#jupiter{
+    background-image: url(../images/Jupiter.png);
+}
+
+#saturno{
+    background-image: url(../images/Saturno.png);
+}
+
+#urano{
+    background-image: url(../images/Urano.png);
+}
+
+#netuno{
+    background-image: url(../images/Netuno.png);
+}
+
+#galaxia{
+    background-image: url(../images/Galaxia.png);
+    background-size: cover;
+}
+
+#buraco{
+    background-image: url(../images/Buraco.png);
+    background-size: cover;
+}

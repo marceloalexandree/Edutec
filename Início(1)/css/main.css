@@ -1,0 +1,243 @@
+#cima {
+    background-image: url(../images/fundo\ 2.png);
+    background-size: cover;
+    display: flex;
+    padding-top: 5rem;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+}
+
+#cima div {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin-left: 8rem;
+}
+
+h1{
+    font-size: 3.75rem;
+    font-weight: 700;
+    font-family: Abster;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+h2 {
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 3rem;
+    
+}
+
+#cima p{
+    font-family: 'Numans', sans-serif;
+    color: #ffffff;
+    font-size: 1.25rem;
+    width: 37rem;
+    letter-spacing: -10%;
+    line-height: 23px;
+}
+
+button{
+    background: #8F47AD;
+    border: none;
+    padding-inline: 2.25rem;
+    padding-block: 0.75rem;
+    border-radius: 10px;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+#baixo1{
+    background: linear-gradient(to bottom, #000000, #222222);
+    padding-inline: 8rem;
+    padding-block: 5rem;
+}
+
+#baixo2{
+    background: #111111;
+    background-size: contain;
+    padding-inline: 8rem;
+    padding-top: 5rem;
+    padding-bottom: 7rem;
+}
+
+.conteudo{
+    margin-top: 3rem;
+    display: flex;
+    gap: 4rem;
+}
+
+#noticia-principal {
+    display: inline-block;
+    position: relative;
+    border-radius: 0 0 10px 10px;
+    border: 2px solid transparent;
+    z-index: 1;
+}
+
+#noticia-principal img{
+    border-radius: 10px;
+    width: 45vw;
+}
+
+#noticia-principal  h3{
+    position: absolute;
+    bottom: .2rem;
+    padding-block: 1rem;
+    padding-inline: 1rem;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    font-family: 'Open-sans', sans-serif;
+    font-size: 1.75rem;
+    border-radius: 0 0 10px 10px;
+    text-align: justify;
+  }
+
+.noticias-secundarias {
+    display: inline-block;
+    position: relative;
+    border-radius: 0 0 10px 10px;
+    border: 2px solid transparent;
+    z-index: 1;
+}
+
+.noticias-secundarias img{
+    border-radius: 10px;
+    height: 13.5vw;
+    width: 37.5vw;
+}
+
+.noticias-secundarias h4{
+    position: absolute;
+    bottom: .2rem;
+    padding-block: 1rem;
+    padding-inline: 1rem;
+    color: white;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    font-family: 'Open-sans', sans-serif;
+    font-size: 1.375rem;
+    border-radius: 0 0 10px 10px;
+    text-align: justify;
+}
+#outras-noticias{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.noticias-secundarias h4:hover,  #noticia-principal  h3:hover{
+    cursor: pointer;
+    background: rgba(0, 0, 0, .8);
+}
+
+.noticias-secundarias:hover,  #noticia-principal:hover{
+    cursor: pointer;
+    border: solid 2px #8F47AD;
+    border-radius: 10px;
+}
+
+.cima-conteudos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cima-conteudos a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    padding-inline: 2rem;
+    padding-block: 0.75rem;
+    border-radius: 10px;
+    background: #111111;
+}
+
+.cima-conteudos a:hover{
+    text-decoration: underline;
+}
+
+#cards {
+    display: flex;
+    gap: 10rem;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+#quiz, #jogo-memoria{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 3.5rem;
+    border-radius: 10px;
+    padding-inline: 2rem;
+    padding-block: 2rem;
+    width: 29rem;
+}
+
+#jogo-memoria{
+    background: linear-gradient(to bottom right, #8F47AD, #3d1c4d);
+}
+
+#quiz{
+    background: linear-gradient(to bottom left, #8F47AD, #3d1c4d);
+}
+
+#quiz img, #jogo-memoria img{
+    filter: invert(1);
+    width: 7rem;
+}
+
+#baixo2 h3{
+    color: white;
+    font-family: 'Open-sans', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+#baixo2 p{
+    font-family: 'Numans', sans-serif;
+    color: #ffffff;
+    font-size: 1.5rem;
+    letter-spacing: -10%;
+    line-height: 23px;
+}
+
+#baixo2 a{
+    color: white;
+    font-family: 'Open-sans', sans-serif;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding-inline: 2.25rem;
+    padding-block: 0.75rem;
+    border-radius: 20px;
+    border: solid 2px #ffffff;
+}   
+
+#jogo-memoria:hover {
+    background: linear-gradient(to bottom right, #111111, #3d1c4d);
+    cursor: pointer;
+}
+
+#quiz:hover {
+    background: linear-gradient(to bottom left, #111111, #3d1c4d);
+    cursor: pointer;
+}
+
+#quiz a:hover, #jogo-memoria a:hover{
+    text-decoration: underline;
+}
+
+button:hover{
+    cursor: pointer;
+}

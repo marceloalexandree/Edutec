@@ -1,0 +1,116 @@
+main {
+    background-color: #111;
+    padding-top: 6.5rem;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    z-index: 1;
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+}
+
+.banner {
+    background-image: linear-gradient(135deg, rgba(20, 20, 20, 0.20), #111) ,url('../img/inetrestelar.png') ;
+    background-size: cover;
+    background-position: center center;
+    color: black;
+    object-fit: contain;
+    height: 40rem;
+    margin-bottom: 3rem;
+}
+
+.banner__conteudo {
+    margin-left: 6rem;
+    padding-top: 13rem;
+    height: 18rem;
+}
+
+.banner__titulo {
+    font-size: 3rem;
+    font-weight: 800;
+    padding-bottom: 0.3rem;
+    font-family: Abster;
+    letter-spacing: 0.625rem;
+    text-transform: uppercase;
+    color: #e6e6e6;
+}
+
+.banner__desc {
+    width: 45rem;
+    font-size: 1.125rem;
+    font-family: 'Open Sans';
+    max-width: 32rem;
+    height: 180px;
+    color: #dedede;
+}
+
+.banner__button {
+    cursor: pointer;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    border-radius: 5px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    margin-block: 2rem;
+    background-color: rgba(51, 51, 51, 0.5);
+    font-family: 'Open Sans';
+    font-size: 1.125rem;
+}
+
+.banner__button:hover {
+    color: #000;
+    background-color: #e6e6e6;
+    transition: all 0.2s;
+}
+
+.row__filme {
+    object-fit: contain;
+    max-height: 100px;
+    transition: transform 0.5s;
+    padding: 2px;
+    border: 1px solid transparent;
+}
+
+.row__filmes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding-bottom: 3rem;
+}
+
+.row__filmem {
+    max-height: 23rem;
+    height: 23rem;
+}
+
+.row__filmem:hover {
+    transform:  scale(1.15);
+    cursor: pointer;
+    border: 1px solid rgba(170, 170, 170, 0.75);
+    border-radius: 5px;
+}
+
+.row__filmes::-webkit-scrollbar {
+    display: none;
+}
+
+h2{
+    margin-left: 3.5rem;
+    color: #e6e6e6;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-family: 'Open Sans';
+    font-size: 1.25rem;
+}

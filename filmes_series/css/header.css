@@ -1,0 +1,55 @@
+header{
+    background: #111111;
+    height: 6.5rem;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    z-index: 5;
+    justify-content: space-around;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 6.5rem;
+}
+
+nav a{
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Open Sans';
+    font-weight: 700;
+}
+
+#logo{
+    width: 7rem;
+    margin-right: -2rem;
+}
+
+#login-entrar{
+    background: #8F47AD;
+    padding-inline: 2.25rem;
+    padding-block: 0.75rem;
+    border-radius: 10px;
+}
+
+#conteudo, #filmes-series, #material{
+    margin-inline: 9rem;
+    padding-inline: 2rem;
+    padding-block: 0.75rem;
+    border-radius: 10px;
+}
+
+#botoes-nav{
+    margin-inline: 2rem;
+    margin-left: 2.5rem;
+}
+
+#conteudo:hover, #filmes-series:hover, #material:hover{
+    background: #8F47AD;
+    transition: all 0.5s ease;
+}
+
+.vaca{
+    border: solid 2px #8F47AD;
+}

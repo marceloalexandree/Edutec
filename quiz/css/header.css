@@ -1,0 +1,35 @@
+#quizHeader {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #111111;
+    color: #fff;
+
+}
+
+header{
+    width: 100%;
+    height: 3.75rem;
+}
+
+.pon{
+    background-color: #8F47AD;
+    padding: .25rem;
+    border-radius: 5px;
+    margin-right: 1.25rem;
+    
+}
+
+.ace{
+    background-color: #2DDB7D;
+    padding: .25rem;
+    border-radius: 5px;
+    margin-right: 1.25rem;
+}
+
+.err{
+    background-color: #FF0000;
+    padding: .25rem;
+    border-radius: 5px;
+}
