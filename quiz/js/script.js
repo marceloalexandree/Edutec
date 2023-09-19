@@ -283,7 +283,7 @@ function mostrarResultados() {
         <p>Você acertou ${acertos} questões de um total de 16.</p>
         <button id="reiniciar" onclick="reiniciarQuiz()">Reiniciar</button>
         <button>
-            <a href="../Início(1)/index.html">
+            <a href="../index.html">
                 Sair
             </a>
         </button>
