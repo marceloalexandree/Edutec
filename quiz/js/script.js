@@ -3,7 +3,7 @@ let imgQuestao = document.querySelector('.imagemDaQuestao img');
 let pergunta = document.querySelector('#pergunta');
 let questaoAtual = 0;
 let questaoNumero = 0;
-let pontuacao = 0;
+let pontuacao = 1;
 let acertos = 0;
 let erros = 0; 
 
@@ -218,6 +218,7 @@ function volta() {
 
 
 function mostrarQuestao(questaoNumero) {
+    
     const questao = questoes[questaoNumero];
     imgQuestao.setAttribute('src', 'img/' + questao.imagem);
     pergunta.textContent = questao.pergunta;
@@ -252,6 +253,7 @@ function verificarSeAcertou(alternativa, elemento) {
         acertos++; 
     } else {
         elemento.classList.add('errado');
+        pontuacao++;
         erros++; 
     }
 
@@ -266,6 +268,7 @@ function verificarSeAcertou(alternativa, elemento) {
         questaoNumero++; 
         if (questaoNumero < questoes.length) {
             mostrarQuestao(questaoNumero);
+            
         } else {
             mostrarResultados();
         }
@@ -274,9 +277,18 @@ function verificarSeAcertou(alternativa, elemento) {
 
 
 function mostrarResultados() {
+    console.log(acertos)
+    document.querySelector('#finalizacao').innerHTML = `
+    <h2>Quiz Concluído</h2>
+        <p>Você acertou ${acertos} questões de um total de 16.</p>
+        <button id="reiniciar" onclick="reiniciarQuiz()">Reiniciar</button>
+        <button>
+            <a href="../Início(1)/index.html">
+                Sair
+            </a>
+        </button>
+    `
     // Exibe a pontuação e o total de questões
-    document.querySelector('#pontuacao').textContent = pontuacao;
-    document.getElementById('totalQuestoes').textContent = questoes.length;
 
     // Exibe a seção de finalização
     document.getElementById('finalizacao').style.display = 'block';
@@ -288,7 +300,7 @@ function mostrarResultados() {
 
 function reiniciarQuiz() {
    
-    pontuacao = 0;
+    pontuacao = 1;
     questaoNumero = 0;
     mostrarQuestao(questaoNumero);
     
@@ -299,7 +311,7 @@ function reiniciarQuiz() {
     document.getElementById('pontuacaoAtual').textContent = 0;
     document.getElementById('acertos').textContent = 0;
     document.getElementById('erros').textContent = 0;
-    return pontuacao = 0, erros = 0, acertos = 0;
+    return pontuacao = 1, erros = 0, acertos = 0;
 }
 
 

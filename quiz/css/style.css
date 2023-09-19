@@ -53,7 +53,6 @@ h1 {
     margin-block: .5rem;
     border-radius: 1rem;
     padding-block: 1rem;
-    padding-inline: 1rem;
 }
 
 h2{
@@ -67,7 +66,7 @@ p{
 }
 
 img{
-    width: 25rem;
+    width: 400px;
     position: absolute;
     top: 24%;
     left: 50%;
@@ -109,7 +108,7 @@ button{
 }
 
 .centro input{
-    width: 25rem;
+    width: 400px;
     margin-top: 4rem;
 }
 
@@ -118,7 +117,7 @@ button{
     left: 50%;
     top: 55%;
     transform: translate(-50%, -55%);
-    width: 40,625rem;
+    width: 650px;
 }
 
 .questoes {
@@ -137,7 +136,7 @@ button{
 }
 
 .questoes ol li {
-    width: 18.75rem;
+    width: 300px;
     background-color: #111111;
     display: block;
     margin: 0.625rem;
@@ -165,4 +164,8 @@ button{
 #alternativas{
     width: 50%; 
     float: left;
+}
+
+.correta {
+    background-color: #008000;
 }
